@@ -26,7 +26,7 @@ export default function Checkout() {
     error,
     sendRequest,
     clearData
-  } = useHttp('http://ec2-3-87-239-214.compute-1.amazonaws.com:3000/orders', requestConfig);
+  } = useHttp('https://food-app.keev.online/backend/orders', requestConfig);
 
   const cartTotal = cartCtx.items.reduce(
     (totalPrice, item) => totalPrice + item.quantity * item.price,

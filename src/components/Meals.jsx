@@ -9,7 +9,7 @@ export default function Meals() {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp('http://ec2-3-87-239-214.compute-1.amazonaws.com:3000/meals', requestConfig, []);
+  } = useHttp('https://food-app.keev.online/backend/meals', requestConfig, []);
 
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;
