@@ -26,7 +26,7 @@ export default function Checkout() {
     error,
     sendRequest,
     clearData
-  } = useHttp('https://food-app.keev.online/backend/orders', requestConfig);
+  } = useHttp('https://portfolio.keev.online/food-api/orders', requestConfig);
 
   const cartTotal = cartCtx.items.reduce(
     (totalPrice, item) => totalPrice + item.quantity * item.price,

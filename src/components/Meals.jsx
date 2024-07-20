@@ -9,7 +9,7 @@ export default function Meals() {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp('https://food-app.keev.online/backend/meals', requestConfig, []);
+  } = useHttp('https://portfolio.keev.online/food-api/meals', requestConfig, []);
 
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;

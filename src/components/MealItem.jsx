@@ -14,7 +14,7 @@ export default function MealItem({ meal }) {
   return (
     <li className="meal-item">
       <article>
-        <img src={`https://food-app.keev.online/backend/${meal.image}`} alt={meal.name} />
+        <img src={`https://portfolio.keev.online/food-api/${meal.image}`} alt={meal.name} />
         <div>
           <h3>{meal.name}</h3>
           <p className="meal-item-price">
